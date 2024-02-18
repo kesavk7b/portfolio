@@ -1,9 +1,10 @@
 import React from 'react';
+import img from '../myImg/kesav_p.png';
 function Profile(){
     return(
         <img
             className="profile-pic"
-            src="/kesav_p.png"
+            src={img}
             alt=""
         />
     );

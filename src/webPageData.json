@@ -1,0 +1,99 @@
+[
+    {
+        "component":"NavBar",
+        "props": {
+            "menu":["Home","About","Experience","Skills","Contact"]
+        }
+    },
+    {
+        "component":"Home",
+        "props": {}
+    },
+    {
+        "component":"ContentContainer",
+        "props": {
+            "id":"About",
+            "heading":"About",
+            "component":"About",
+            "height":"auto",
+            "props":{}
+        }
+    },
+    {
+        "component":"ContentContainer",
+        "props": {
+            "id":"Experience",
+            "heading":"Experience",
+            "component":"Experience",
+            "height":"auto",
+            "props":{
+                "experience":[
+                    {
+                        "role":"Software Developer",
+                        "company":{"name":"T cube | the think tank solutions"},
+                        "duration":"Apr, 2023 - Feb, 2025",
+                        "description":[
+                            "Developed and maintained a Hospital Management System (HMS) using Laravel",
+                            "Collaborated with cross-functional teams to implement features like patient registration, billing, and reporting",
+                            "Optimized backend APIs for performance and scalability"
+                        ]
+                    },
+                    {
+                        "role":"Associate Software Engineer",
+                        "company":{"name":"Logic Research Labs"},
+                        "duration":"Mar, 2024 - Mar, 2025",
+                        "description":[
+                            "Worked primarily with core PHP to build and enhance HMS and educational software solutions",
+                            "CDeveloped custom modules for classroom scheduling, exam management, and student records",
+                            "Improved system performance and maintained clean, modular code following best practices"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "component":"ContentContainer",
+        "props": {
+            "id":"Skills",
+            "heading":"Skills",
+            "component":"Skills",
+            "height":"auto",
+            "props":{
+                "skillsets":[
+                    {"skill":"HTML","file":"html.svg"},
+                    {"skill":"CSS","file":"css.svg"},
+                    {"skill":"Java Script","file":"js.svg"},
+                    {"skill":"PHP","file":"php.svg"},
+                    {"skill":"Mysql","file":"mysql.svg"},
+                    {"skill":"Java","file":"java.svg"},
+                    {"skill":"Python","file":"python.svg"},
+                    {"skill":"Laravel","file":"laravel.svg"}
+                ]
+            }
+        }
+    },
+    {
+        "component":"ContentContainer",
+        "props": {
+            "id":"Contact",
+            "heading":"Contact",
+            "component":"Contact",
+            "height":"auto",
+            "props":{
+                "contacts":[
+                    {"icon":"whatsapp","display":"+91 9384591394","link":"https://wa.me/919384591394","color":"green"},
+                    {"icon":"mail","display":"kesavabharathi200@gmail.com","link":"kesavabharathi200@gmail.com","color":"orange"},
+                    {"icon":"linkedin","display":"linkedin.com/in/kesavabharathi-k7b","link":"https://linkedin.com/in/kesavabharathi-k7b","color":"blue"}
+                ]
+            }
+        }
+    },
+    {
+        "component":"Resume",
+        "props":{
+            "file_url":"Kesav_resume.pdf"
+        }
+    }
+  
+]

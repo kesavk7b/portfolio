@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../myImg/kesav_p.png';
-function Profile(){
+export const Profile = () => {
     return(
         <img
             className="profile-pic"
@@ -9,5 +9,3 @@ function Profile(){
         />
     );
 }
-
-export default Profile;

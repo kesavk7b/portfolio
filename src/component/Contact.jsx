@@ -1,14 +1,22 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRobot } from '@fortawesome/free-solid-svg-icons';
-export default function Contact({icon=faRobot,children,title=""}){
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+export const Contact = ({contacts}) => {
+    const icons = {"whatsapp":faWhatsapp,"linkedin":faLinkedin,"mail":faEnvelope}
     return(
-        <div title={title} className="p-2 col-12 col-sm-12 col-md-3 col-lg-3">
-            <div className='flex'>
-                <FontAwesomeIcon size='2x' icon={icon} />
-            </div>
-            <div className='flex'>
-                <p>{children}</p>
-            </div>
+        <div className='flex-container'>
+           {
+            contacts.map((elem,index)=>{
+                return (
+                    <div key={index} className='contact-info'>
+                        <a href={elem.link} style={{textDecoration:"none",color:"black"}}>
+                            <FontAwesomeIcon icon={icons[elem.icon]} size={"3x"} style={{color:elem.color}} />
+                            <div>{elem.display}</div>
+                        </a>
+                    </div>
+                )
+            })
+           }
         </div>
     );
 }

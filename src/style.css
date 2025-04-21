@@ -1,0 +1,105 @@
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+.nav>ul{
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+}
+.nav>ul>li{
+    float: right;
+    padding-inline: 10px;
+}
+
+.nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.cover-height-100{
+    height: 100vh;
+}
+.cover-height-auto{
+    height: auto;
+}
+.cover-height-75{
+    height: 75vh;
+}
+.cover-height-50{
+    height: 50vh;
+}
+.cover-height-25{
+    height: 25vh;
+}
+
+.cover{
+    padding:20px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info{
+    padding-inline: 10px;
+    width: 300px;
+    text-align: center;
+}
+.skill-icon{
+    height: 100px;
+    width:100px;
+}
+.skill-holder{
+    display: flex;
+    justify-content: center;
+}
+
+.skill-container{
+    width: 150px;
+}
+
+.download-btn{
+    border-radius: 50px;
+    padding-inline: 10px;
+    background-color: transparent;
+    border: 2px solid green;
+    color:green;
+    margin: 5px;
+}
+
+.dashboard{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .flex-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav>ul>li{
+        float: left;
+        padding-inline: 5px;
+    }
+    .dashboard-info{
+        background-image: url('../public/kesav_pic.jpg');
+        background-repeat: no-repeat;
+        background-position: left 24% center;
+    }
+
+    .dashboard-info>div{
+        text-shadow: 4px 4px 2px black;
+    }
+}
